@@ -1,0 +1,152 @@
+.create-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.create-header {
+  background: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.create-logo {
+  color: #172554;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.create-logo span {
+  color: #2563eb;
+}
+
+.back-link {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.create-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.create-heading {
+  margin-bottom: 30px;
+}
+
+.create-heading span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.create-heading h1 {
+  color: #172554;
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.create-heading p {
+  color: #64748b;
+}
+
+.create-form {
+  background: white;
+  padding: 35px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.create-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+.create-field label {
+  color: #334155;
+  font-weight: 600;
+}
+
+.create-field input,
+.create-field select,
+.create-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.create-field input:focus,
+.create-field select:focus,
+.create-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.create-field textarea {
+  resize: vertical;
+}
+
+.create-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 18px;
+}
+
+.publish-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.publish-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .create-header {
+    padding: 18px 5%;
+  }
+
+  .create-container {
+    padding: 30px 16px;
+  }
+
+  .create-heading h1 {
+    font-size: 27px;
+  }
+
+  .create-form {
+    padding: 22px 17px;
+  }
+
+  .create-actions {
+    flex-wrap: wrap;
+  }
+}

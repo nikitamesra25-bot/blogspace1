@@ -1,0 +1,91 @@
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 800;
+  color: #172554;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a,
+.login-btn {
+  text-decoration: none;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.login-btn:hover {
+  color: #2563eb;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.signup-btn {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    gap: 12px;
+  }
+
+  .signup-btn {
+    padding: 10px 13px;
+  }
+}
