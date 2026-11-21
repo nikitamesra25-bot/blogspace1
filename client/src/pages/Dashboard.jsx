@@ -1,7 +1,8 @@
-
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Dashboard.css";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${blogId}`,
+        `${API_URL}/api/blogs/${blogId}`,
         {
           method: "DELETE",
           headers: {
@@ -63,7 +64,7 @@ function Dashboard() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/blogs",
+          `${API_URL}/api/blogs`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

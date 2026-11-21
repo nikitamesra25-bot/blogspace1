@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import "./CreateBlog.css";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function EditBlog() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ function EditBlog() {
     const fetchBlog = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/blogs/${id}`
+          `${API_URL}/api/blogs/${id}`
         );
 
         const data = await response.json();
@@ -62,7 +64,7 @@ function EditBlog() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${id}`,
+        `${API_URL}/api/blogs/${id}`,
         {
           method: "PUT",
           headers: {

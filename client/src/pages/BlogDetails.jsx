@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./BlogDetails.css";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function BlogDetails() {
   const { id } = useParams();
 
@@ -13,7 +15,7 @@ function BlogDetails() {
     const fetchBlog = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/blogs/${id}`
+          `${API_URL}/api/blogs/${id}`
         );
 
         const data = await response.json();
